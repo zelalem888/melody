@@ -1,0 +1,124 @@
+/*-----------------------------------*\ 
+  #for large mobile
+\*-----------------------------------*/
+
+@media (min-width: 450px) {
+
+
+  .home-text {
+    max-width: 320px;
+    margin-inline: auto;
+  }
+
+  .home .btn-group {
+    flex-direction:  row;
+    justify-content: center;
+  }
+
+}
+
+/*-----------------------------------*\ 
+  #for tablat
+\*-----------------------------------*/
+
+@media (min-width: 570px) {
+
+  }
+  .navbar-wrapper,
+  .home,
+  .about,
+  .services,
+  .product,
+  .testimonials,
+  .footer-wrapper {
+    max-width: 80%;
+    margin-inline: auto;
+  }
+
+/*-----------------------------------*\ 
+  #for large tablat
+\*-----------------------------------*/
+
+@media (min-width: 768px) {
+
+
+
+  .products-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 40px;
+    margin-bottom: 70px;
+  }
+
+  .testimonials-grid { grid-template-columns: 1fr 1fr; }
+
+}
+
+/*-----------------------------------*\ 
+  #for desktop
+\*-----------------------------------*/
+
+@media (min-width: 1024px) {
+
+ 
+  
+
+  .navbar { padding: 35px 30px; }
+
+  .navbar-nav {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    width:  auto;
+    height: auto;
+    transform: translateY(0);
+    padding: 0;
+    flex-direction: row;
+    gap: 50px;
+    pointer-events: all;
+  }
+
+  .menu-toggle-btn { display: none; }
+
+  .cart-box-ul {
+    padding: 60px;
+    padding-bottom: 150px;
+  }
+
+  .cart-btn-group { padding: 30px 60px; }
+
+  .home {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .home-left { text-align: left; }
+
+  .home-text { margin-inline: 0; }
+
+  .about {
+    grid-template-columns: 3fr 4fr;
+    gap: 80px;
+    align-items: center;
+    padding: 100px  120px;
+  }
+
+  .about-left .img-box { aspect-ratio: auto; }
+
+
+
+  .services {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 30px;
+  }
+
+  .products-grid { grid-template-columns: repeat(3, 1fr); }
+
+  .testimonials { padding-bottom: 200px; }
+
+
+  .footer-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
