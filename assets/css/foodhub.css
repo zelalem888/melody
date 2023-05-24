@@ -54,8 +54,6 @@ html {
   transition: 0.75s ease;
 }
 
-.btn:hover { filter: saturate(1.05) brightness(1.05); }
-
 
 
 .section-title {
@@ -172,6 +170,35 @@ html {
 .menu-toggle-btn.active .two { transform: rotate(45deg); }
 
 .menu-toggle-btn.active .three { transform: translateY(-7px) rotate(-45deg); }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+  color: hsl(45, 91%, 58%);
+  
+}
 
 .cart-box {
   position: fixed;
@@ -556,11 +583,4 @@ footer {
 
 .social-link ion-icon:hover { 
   color: hsl(45, 91%, 58%); 
-}
-
-.copyright {
-  font-size: 12px;
-  color: hsl(240, 9%, 51%);
-  text-align: center;
-  letter-spacing: 0.5px;
 }
